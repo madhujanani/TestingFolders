@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login-page</title>
+<script>
+function validate(){
+	
+	var user = document.getElementById("usser");
+	var pass = document.getElementById("pass");
+	
+	if (user.value!=null &&user.value != "") {
+		if (pass.value!=null && pass.value!= "") {
+			alert("Welcome to the display")
+			return true;
+		} 
+		else {
+			alert("Check your password");
+			return false;
+		}
+	} 
+	else {
+		alert("Check your username");
+		return false;
+
+	}
+}
+
+</script>
+</head>
+<body>
+<form action="LoginServlet">
+<table>
+<tr>
+<td>username<td>
+<td><input type="text" value = Hello id =usser></td>
+</tr>
+
+<tr>
+<td>password<td>
+<td><input type="text" value = 123456 id =pass></td>
+</tr>
+<tr>
+<td>Email<td>
+<td><input type="email" value = mad@gmail.com></td>
+</tr>
+
+<tr>
+<td>PhoneNumber<td>
+<td><input type="text" value = "987654323" ></td>
+</tr>
+
+<tr>
+<td>Dob<td>
+<td><input type="date" value = UDOB ></td>
+</tr>
+
+<tr>
+<td>login<td>
+<td><input type="submit" value = login onclick= "return validate()"></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
