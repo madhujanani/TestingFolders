@@ -1,0 +1,134 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-19T21:24:21.118Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2099945500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 14857700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.impliwait()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2744417500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.appUrl()"
+            }
+          },
+          {
+            "result": {
+              "duration": 206720400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.maxwin()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "",
+        "description": "To validate login funtionality using valid and invalid inputs",
+        "id": ";",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4204100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "enter into kohls application using chrome driver",
+            "match": {
+              "location": "StepDefination.enter_into_kohls_application_using_chrome_driver()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9184913600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user needs to enter valid username \u003c\"hello@123\"\u003e and invalid password \u003c\"1234557\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hello@123\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"1234557\"",
+                  "offset": 71
+                }
+              ],
+              "location": "StepDefination.user_needs_to_enter_valid_username_and_invalid_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 279654100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user needs to click on login button",
+            "match": {
+              "location": "StepDefination.user_needs_to_click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 520300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User needs to reach invalid credential page",
+            "match": {
+              "location": "StepDefination.user_needs_to_reach_invalid_credential_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "To Find the login functionallity",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

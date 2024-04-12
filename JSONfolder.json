@@ -1,0 +1,271 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-16T06:03:15.202Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2134990800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 18335000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.impliwait()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3659983300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.appUrl()"
+            }
+          },
+          {
+            "result": {
+              "duration": 330201100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.maxwin()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "",
+        "description": "To validate the search product end to end  functionallity",
+        "id": ";",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5180700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter into kohls application using chrome driver",
+            "match": {
+              "location": "StepDefination.enter_into_kohls_application_using_chrome_driver()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3665730100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user needs to enter product \u003c\"water-bottle\"\u003e in search box and search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"water-bottle\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefination.user_needs_to_enter_product_in_search_box_and_search(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1209500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User needs to reach next credential page",
+            "match": {
+              "location": "StepDefination.user_needs_to_reach_next_credential_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3824801200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user need to choose one produt from that page and select it by clicking it",
+            "match": {
+              "location": "StepDefination.user_need_to_choose_one_produt_from_that_page_and_select_it_by_clicking_it()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 231189100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user needs to click add to cart",
+            "match": {
+              "location": "StepDefination.user_needs_to_click_add_to_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[text()\u003d\u0027VIEW CART \u0026 CHECKOUT\u0027]\"}\n  (Session info: chrome\u003d103.0.5060.114)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.3.0\u0027, revision: \u0027a4995e2c09*\u0027\nSystem info: host: \u0027DESKTOP-QPT45PR\u0027, ip: \u0027192.168.0.14\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [432d2704e185b734e5e29ca9e365c343, findElement {using\u003dxpath, value\u003d//button[text()\u003d\u0027VIEW CART \u0026 CHECKOUT\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\\Users\\gowre\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57416}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57416/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 432d2704e185b734e5e29ca9e365c343\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)\r\n\tat org.baseclass.BaseClass.btnclk(BaseClass.java:73)\r\n\tat org.stepdefination.StepDefination.click_on_view_cart_and_move_to_next_step(StepDefination.java:157)\r\n\tat ✽.click on view cart and move to next step(file:src/test/resources/FeatureFiles/EndProduct.feature:12)\r\n",
+              "duration": 12740875300,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "click on view cart and move to next step",
+            "match": {
+              "location": "StepDefination.click_on_view_cart_and_move_to_next_step()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 253200,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "go to checkout and click it",
+            "match": {
+              "location": "StepDefination.go_to_checkout_and_click_it()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2155500,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "click guest checkout enter details",
+            "match": {
+              "location": "StepDefination.click_guest_checkout_enter_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Fname",
+                  "Lname",
+                  "Email",
+                  "PhoneNum"
+                ]
+              },
+              {
+                "cells": [
+                  "madhu",
+                  "janu",
+                  "madhu123@gmail.com",
+                  "1234567890"
+                ]
+              },
+              {
+                "cells": [
+                  "gowri",
+                  "raj",
+                  "gowri123@gmail.com",
+                  "1230987654"
+                ]
+              },
+              {
+                "cells": [
+                  "Kiran",
+                  "vaibs",
+                  "kiran123@gmail.com",
+                  "5673920290"
+                ]
+              },
+              {
+                "cells": [
+                  "khavin",
+                  "gowri",
+                  "khav in123@gmail.com",
+                  "4386504925"
+                ]
+              },
+              {
+                "cells": [
+                  "raj",
+                  "rani",
+                  "raj123@gmail.com",
+                  "3454354656"
+                ]
+              },
+              {
+                "cells": [
+                  "jeeva",
+                  "mathaian",
+                  "jeeva123@gmail.com",
+                  "4504848534"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 343200,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "pay by credit-debit and click",
+            "match": {
+              "location": "StepDefination.pay_by_credit_debit_and_click()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 728000,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Enter the card details and click done",
+            "match": {
+              "location": "StepDefination.enter_the_card_details_and_click_done(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "viswa",
+                  "123456789012345",
+                  "09/25",
+                  "564"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@endProduct"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "To Find the search product end to end  functionallity",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/EndProduct.feature",
+    "tags": [
+      {
+        "name": "@endProduct",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

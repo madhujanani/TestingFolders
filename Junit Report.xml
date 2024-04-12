@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.588159">
+    <testcase classname="" name="_2" time="14.588159">
+        <system-out><![CDATA[Given enter into kohls application using chrome driver......................passed
+When user needs to enter valid username <"hello@123"> and invalid password <"1234557">.passed
+When user needs to click on login button....................................passed
+Then User needs to reach invalid credential page............................passed
+]]></system-out>
+    </testcase>
+</testsuite>
