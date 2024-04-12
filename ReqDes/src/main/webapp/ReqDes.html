@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script >
+function validate(){
+	var nam= document.getElementById("user")
+	var pas= document.getElementById("pass")
+	if (user.value != null && user.value !="") {
+		if (pass.value!=null && pass.value!= "") {
+			alert("Welcome to the display")
+			return true;
+			
+		} else {
+			alert("Check your password")
+			return false;
+		}		
+	} else {
+		alert("Ceck youur Username")
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<form action="LoginPageServlet">
+<table>
+<tr>
+<td>Username</td>
+<td><input type="text" value="Uname" id="user"/>
+</tr>
+
+<tr>
+<td>password</td>
+<td><input type="text" name="Upass" id = "pass"/>
+</tr>
+
+
+<tr>
+<td>login</td>
+<td><input type="submit" value="login" onclick=" return validate()"/>
+</tr>
+</table>
+</form>
+</body>
+</head>
+
+</html>

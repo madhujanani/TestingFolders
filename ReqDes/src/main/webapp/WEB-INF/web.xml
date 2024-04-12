@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>ReqDes</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+   <context-param>
+  <param-name> maxlmt</param-name>
+  <param-value>14</param-value>
+  
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>LoginPageServlet</display-name>
+    <servlet-name>LoginPageServlet</servlet-name>
+    <servlet-class>org.reqdes.LoginPageServlet</servlet-class>
+     <init-param>
+    <param-name>minpswd</param-name>
+    <param-value>7</param-value>    
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginPageServlet</servlet-name>
+    <url-pattern>/LoginPageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BookingServlet</display-name>
+    <servlet-name>BookingServlet</servlet-name>
+    <servlet-class>org.reqdes.BookingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookingServlet</servlet-name>
+    <url-pattern>/BookingServlet</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+     <error-code>401</error-code>
+     <location>/error</location>     
+     </error-page>
+     
+     <error-page>
+     <exception-type>jakarta.servlet.ServletException</exception-type>
+     <location>/error.html</location>     
+     </error-page>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>
